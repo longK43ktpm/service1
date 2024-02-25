@@ -11,7 +11,7 @@ public class Config {
     public RestTemplate restTemplate() {
         RestTemplate restTemplate = new RestTemplate();
         DefaultUriBuilderFactory defaultUriBuilderFactory
-                = new DefaultUriBuilderFactory("http://container_2:8282/api/service_2");
+                = new DefaultUriBuilderFactory("http://container-2:8282/api/service_2");
         restTemplate.setUriTemplateHandler(defaultUriBuilderFactory);
         return restTemplate;
     }
